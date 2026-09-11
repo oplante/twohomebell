@@ -719,3 +719,178 @@ input:focus {
   .brand-name { font-size: 0.95rem; }
   .header-cta.btn-small { padding: 0.45rem 0.7rem; font-size: 0.75rem; }
 }
+
+
+/* --- Mara revamp (Sep 2026) --- */
+.hero-split {
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+}
+.hero-photo {
+  margin: 0;
+  border-radius: calc(var(--radius) + 0.15rem);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--cream-2);
+}
+.hero-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+.hero-copy .hero-mark { margin-bottom: 0.85rem; }
+.trust-coach {
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+  margin-top: 1.35rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--cream) 70%, white);
+  max-width: 34rem;
+}
+.trust-coach img {
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid var(--line);
+}
+.trust-coach strong { display: block; font-weight: 650; color: var(--charcoal); }
+.trust-coach span { display: block; font-size: 0.88rem; color: var(--muted); margin-top: 0.15rem; }
+
+.scene-grid {
+  display: grid;
+  gap: 0.85rem;
+  margin-top: 1.25rem;
+}
+.scene-card {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: color-mix(in srgb, var(--cream) 55%, white);
+}
+.scene-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+.scene-card figcaption {
+  padding: 0.85rem 1rem 1rem;
+}
+.scene-card .tag {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brass-deep);
+  font-weight: 650;
+  margin-bottom: 0.25rem;
+}
+.scene-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.coach-block {
+  display: grid;
+  gap: 1.25rem;
+  align-items: start;
+}
+.coach-portrait {
+  margin: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  max-width: 22rem;
+}
+.coach-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+.coach-quote {
+  margin: 1rem 0 0;
+  padding: 0.9rem 1rem;
+  border-left: 3px solid var(--brass);
+  color: var(--charcoal);
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.15rem;
+  line-height: 1.35;
+}
+.coach-quote cite {
+  display: block;
+  margin-top: 0.55rem;
+  font-style: normal;
+  font-family: inherit;
+  font-size: 0.88rem;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+.coach-creds {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+}
+.coach-creds li {
+  margin: 0;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  padding-left: 1.2rem;
+  position: relative;
+}
+.coach-creds li::before {
+  content: "";
+  width: 0.4rem;
+  height: 0.4rem;
+  background: var(--brass);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 1.05rem;
+}
+.inline-photo {
+  margin: 1.25rem 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+.inline-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+.inline-photo figcaption {
+  padding: 0.65rem 0.9rem;
+  font-size: 0.88rem;
+  color: var(--muted);
+  background: color-mix(in srgb, var(--cream) 70%, white);
+}
+
+@media (min-width: 768px) {
+  .hero-split {
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 2rem;
+  }
+  .hero-photo img { aspect-ratio: 4 / 5; max-height: 34rem; }
+  .scene-grid { grid-template-columns: 1fr 1fr; }
+  .scene-grid.four { grid-template-columns: 1fr 1fr; }
+  .coach-block { grid-template-columns: minmax(12rem, 18rem) 1fr; gap: 1.75rem; }
+}
+@media (min-width: 960px) {
+  .scene-grid.four { grid-template-columns: repeat(4, 1fr); }
+}
