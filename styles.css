@@ -894,3 +894,7 @@ input:focus {
 @media (min-width: 960px) {
   .scene-grid.four { grid-template-columns: repeat(4, 1fr); }
 }
+
+@media (min-width: 768px) {
+  .scene-grid:not(.four) { grid-template-columns: repeat(3, 1fr); }
+}
