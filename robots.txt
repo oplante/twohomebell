@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://twohomebell.com/sitemap.xml
+Sitemap: https://twohomebell.com/sitemap.xml
