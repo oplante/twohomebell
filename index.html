@@ -12,11 +12,11 @@
   <meta property="og:description" content="One bell. Two homes. 8-Week Interrupted-Week Plan — €39.">
   <meta property="og:url" content="https://twohomebell.com/">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://twohomebell.com/twohomebell-mark.png">
+  <meta property="og:image" content="https://twohomebell.com/coach/web/og-1200x630.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Stay strong when the week is split.">
   <meta name="twitter:description" content="One bell. Two homes. 8-Week Interrupted-Week Plan — €39.">
-  <meta name="twitter:image" content="https://twohomebell.com/twohomebell-mark.png">
+  <meta name="twitter:image" content="https://twohomebell.com/coach/web/og-1200x630.jpg">
   <meta name="theme-color" content="#F5F0E8">
   <script type="application/ld+json">
   {
@@ -26,7 +26,7 @@
     "description": "Two homes. Hotel rooms. One bell. An 8-week kettlebell plan that fits a life that moves. PDF plus Notion tracker.",
     "brand": {"@type": "Brand", "name": "TwoHomeBell"},
     "url": "https://twohomebell.com/",
-    "image": "https://twohomebell.com/twohomebell-mark.png",
+    "image": "https://twohomebell.com/coach/web/og-1200x630.jpg",
     "offers": {
       "@type": "Offer",
       "priceCurrency": "EUR",
@@ -55,6 +55,7 @@
   <nav class="subnav" aria-label="On this page">
     <a href="#problem">Problem</a>
     <a href="#get">What you get</a>
+    <a href="#coach">Coach</a>
     <a href="#who">Who</a>
     <a href="#inside">Inside</a>
     <a href="#faq">FAQ</a>
@@ -63,14 +64,25 @@
 
   <main id="main">
     <section class="hero">
-      <div class="wrap">
-        <img class="hero-mark" src="logo.png" alt="" width="76" height="90">
-        <p class="kicker">One bell. Two homes.</p>
-        <h1>Stay strong when the week is split.</h1>
-        <p class="lead">Two homes. Hotel rooms. One bell. An 8-week plan that fits a life that moves.</p>
-        <div class="btn-row">
-          <a class="btn btn-ghost" href="start.html">Start with 3 free hotel sessions</a>
-          <a class="btn btn-primary js-buy" href="https://twohomebell.lemonsqueezy.com/checkout/buy/a50a3052-cdcf-4d7c-9c73-d2590b0c21f1">Get the 8-week plan — €39</a>
+      <div class="wrap hero-split">
+        <figure class="hero-photo">
+          <img src="coach/web/hero-1600.jpg" width="1600" height="2000" alt="Mara Ellison standing with a kettlebell in a quiet cream room">
+        </figure>
+        <div class="hero-copy">
+          <p class="kicker">One bell. Two homes.</p>
+          <h1>Stay strong when the week is split.</h1>
+          <p class="lead">Two homes. Hotel rooms. One bell. An 8-week plan that fits a life that moves.</p>
+          <div class="btn-row">
+            <a class="btn btn-ghost" href="start.html">Start with 3 free hotel sessions</a>
+            <a class="btn btn-primary js-buy" href="https://twohomebell.lemonsqueezy.com/checkout/buy/a50a3052-cdcf-4d7c-9c73-d2590b0c21f1">Get the 8-week plan — €39</a>
+          </div>
+          <div class="trust-coach">
+            <img src="coach/web/portrait-400.jpg" width="400" height="400" alt="Mara Ellison">
+            <div>
+              <strong>Mara Ellison</strong>
+              <span>Programme coach · TwoHomeBell</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -87,18 +99,72 @@
     </section>
 
     <section class="section" id="get" style="padding-top:0">
-      <div class="wrap prose">
+      <div class="wrap">
         <p class="section-num">What you get</p>
         <h2>Eight weeks. Three sessions a week. Twenty to thirty minutes.</h2>
         <p>Every session ships four ways:</p>
-        <ul class="variants">
-          <li><strong>Hotel</strong> one bell or a hotel dumbbell, small room, neighbours.</li>
-          <li><strong>Home A</strong> your usual floor.</li>
-          <li><strong>Home B</strong> the other house, same session, different constraints.</li>
-          <li><strong>Quiet</strong> no swings. Thin floors, late nights, shared walls.</li>
-        </ul>
-        <p>One-bell substitutions throughout. If the hotel only has a dumbbell, you still train.</p>
-        <p>You download a PDF (works on a plane). You tick sessions in a Notion tracker that asks which house you are in, not whether you were “good”.</p>
+        <div class="scene-grid four" aria-label="Session variants">
+          <figure class="scene-card">
+            <img src="coach/web/hotel-800.jpg" width="800" height="1000" loading="lazy" alt="Mara training with a kettlebell in a hotel room beside an open suitcase">
+            <figcaption>
+              <span class="tag">Hotel</span>
+              <p>One bell or a hotel dumbbell. Small room. Neighbours.</p>
+            </figcaption>
+          </figure>
+          <figure class="scene-card">
+            <img src="coach/web/home-kb-800.jpg" width="800" height="1000" loading="lazy" alt="Mara goblet squatting with a kettlebell on a home floor">
+            <figcaption>
+              <span class="tag">Home A</span>
+              <p>Your usual floor. Same session, your own bell.</p>
+            </figcaption>
+          </figure>
+          <figure class="scene-card">
+            <img src="coach/web/home-db-800.jpg" width="800" height="1000" loading="lazy" alt="Mara pressing dumbbells in a living room">
+            <figcaption>
+              <span class="tag">Home B</span>
+              <p>The other house. Hotel dumbbell counts too.</p>
+            </figcaption>
+          </figure>
+          <figure class="scene-card">
+            <img src="coach/web/quiet-800.jpg" width="800" height="1000" loading="lazy" alt="Mara holding a kettlebell in a quiet hotel room with curtains closed">
+            <figcaption>
+              <span class="tag">Quiet</span>
+              <p>No swings. Thin floors, late nights, shared walls.</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="prose" style="margin-top:1.25rem">
+          <p>One-bell substitutions throughout. If the hotel only has a dumbbell, you still train.</p>
+          <p>You download a PDF (works on a plane). You tick sessions in a Notion tracker that asks which house you are in, not whether you were “good”.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="coach">
+      <div class="wrap">
+        <p class="section-num">Meet the coach</p>
+        <div class="coach-block">
+          <figure class="coach-portrait">
+            <img src="coach/web/portrait-800.jpg" width="800" height="800" loading="lazy" alt="Portrait of Mara Ellison, TwoHomeBell programme coach">
+          </figure>
+          <div>
+            <h2>Mara Ellison</h2>
+            <p class="muted">Programme coach · TwoHomeBell</p>
+            <p>Mara Ellison programmes kettlebell and dumbbell training for people whose week is split across two homes and hotels. She has spent twelve years coaching adults in small rooms — thin floors, late check-ins, one implement — and built the Interrupted-Week Plan so a session still counts when the week itself does not.</p>
+            <p>Quiet, direct, no transformation theatre. Training only, not treatment.</p>
+            <blockquote class="coach-quote">
+              “The plan that only works at home A is not a plan.”
+              <cite>— Mara Ellison</cite>
+            </blockquote>
+            <ul class="coach-creds">
+              <li>Strength coach for adults who travel or keep two homes — 12 years, small-room focus</li>
+              <li>Hotel / home A / home B / quiet (no-swing) variants for the same session</li>
+              <li>Author of the TwoHomeBell 8-Week Interrupted-Week Plan (PDF + Notion tracker)</li>
+              <li>Specialty: one kettlebell or a hotel dumbbell in rooms you will not wreck</li>
+              <li>Does not offer rehab, physio, or medical advice; refers out when a clinician is needed</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -143,6 +209,7 @@
         <p>Lemon Squeezy handles checkout and VAT. You get the files by email.</p>
         <div class="btn-row">
           <a class="btn btn-primary js-buy" href="https://twohomebell.lemonsqueezy.com/checkout/buy/a50a3052-cdcf-4d7c-9c73-d2590b0c21f1">Get the 8-week plan — €39</a>
+          <a class="btn btn-ghost" href="start.html">Or start with 3 free hotel sessions</a>
         </div>
       </div>
     </section>
@@ -198,6 +265,10 @@
             <summary>Can I share the PDF?</summary>
             <p>No. One purchase, one person. Forward the free 3-session lead magnet instead.</p>
           </details>
+          <details>
+            <summary>Who is Mara Ellison?</summary>
+            <p>Programme coach for TwoHomeBell. She wrote the Interrupted-Week Plan for small rooms and split weeks. Training only — not a physio, not a clinic.</p>
+          </details>
         </div>
       </div>
     </section>
@@ -216,7 +287,7 @@
       <div class="wrap fine-print">
         <p class="section-num">Fine print we will actually keep</p>
         <p>Training, not treatment. We do not diagnose, rehab, or promise a body. If you have an injury or a condition, speak to a qualified clinician before you start.</p>
-        <p>No Snap. No ads in month 1. Faceless on purpose.</p>
+        <p>No Snap. No ads in month 1. Faceless on social; Mara coaches on this site.</p>
         <div class="btn-row">
           <a class="btn btn-ghost" href="start.html" style="border-color:rgba(245,240,232,0.28);color:var(--cream)">Start with 3 free hotel sessions</a>
           <a class="btn btn-primary js-buy" href="https://twohomebell.lemonsqueezy.com/checkout/buy/a50a3052-cdcf-4d7c-9c73-d2590b0c21f1">Get the 8-week plan — €39</a>
@@ -230,6 +301,7 @@
       <nav aria-label="Footer">
         <a href="index.html">Plan</a>
         <a href="start.html">3 hotel sessions</a>
+        <a href="hotel-kettlebell-workout.html">Hotel workout</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
         <a href="mailto:hello@twohomebell.com">hello@twohomebell.com</a>
