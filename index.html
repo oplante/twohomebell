@@ -66,7 +66,10 @@
     <section class="hero">
       <div class="wrap hero-split">
         <figure class="hero-photo">
-          <img src="coach/web/hero-1600.jpg" width="1600" height="2000" alt="Mara Ellison overhead pressing a kettlebell in a busy gym, mid-set sweat">
+          <video id="hero-reel" autoplay muted loop playsinline preload="metadata" poster="reel-poster.jpg" aria-label="TwoHomeBell reel. Kettlebell training. Stay strong when the week is split.">
+            <source src="twohomebell-reel.mp4" type="video/mp4">
+          </video>
+          <button type="button" class="hero-sound" id="hero-sound" aria-pressed="false">Sound on</button>
         </figure>
         <div class="hero-copy">
           <p class="kicker">One bell. Two homes.</p>
@@ -333,5 +336,30 @@
       <p class="social-note"><a href="start.html">One bell. Two homes.</a></p>
     </div>
   </footer>
+  <script>
+    (function () {
+      var video = document.getElementById("hero-reel");
+      var button = document.getElementById("hero-sound");
+      if (!video || !button) return;
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        video.autoplay = false;
+        video.pause();
+      }
+      function sync() {
+        var soundOn = !video.muted;
+        button.textContent = soundOn ? "Sound off" : "Sound on";
+        button.setAttribute("aria-pressed", soundOn ? "true" : "false");
+      }
+      button.addEventListener("click", function () {
+        video.muted = !video.muted;
+        if (!video.muted) {
+          var pending = video.play();
+          if (pending && pending.catch) pending.catch(function () {});
+        }
+        sync();
+      });
+      sync();
+    })();
+  </script>
 </body>
 </html>
